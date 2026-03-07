@@ -1,4 +1,8 @@
-const asset = (name) => `${import.meta.env.BASE_URL}images/coffee/${name}`;
+const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
+const asset = (name) => `${baseUrl}images/coffee/${name}`;
 
 export const stats = [
   { value: '08', label: 'seasonal drinks rotating across the week' },
