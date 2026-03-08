@@ -292,6 +292,8 @@ main {
 .hero-media img,
 .story-media img,
 .drink-image img {
+  position: absolute;
+  inset: 0;
   height: 100%;
   object-fit: cover;
 }
